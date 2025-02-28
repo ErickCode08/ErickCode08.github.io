@@ -1,8 +1,11 @@
 // JavaScript básico para manejar el envío del formulario
 document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
-    event.preventDefault();
+   // event.preventDefault();
+   setTimeout(function() {
     alert('¡Gracias por contactarnos! Pronto nos comunicaremos contigo.');
-    this.reset();
+   },2000);
+    //this.reset();
+    return true
 });
 
 const navToggle = document.querySelector(".nav-toggle")
