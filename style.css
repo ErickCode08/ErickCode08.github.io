@@ -118,6 +118,7 @@ h3 {
 p {
     margin-bottom: 20px;
     font-size: 1rem;
+    text-justify: inter-word;
 }
 
 /* Sección Nosotros */
