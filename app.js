@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1  // Reducido para mayor sensibilidad
+        threshold: [0.1, 0.5]  // Reducido para mayor sensibilidad
     };
 
     const observer = new IntersectionObserver((entries) => { // Crea un nuevo Intersection Observer que recibe un callback con las entradas
