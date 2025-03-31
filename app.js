@@ -19,6 +19,17 @@ navToggle.addEventListener("click", () => {
     }
 });
 
+// Agregar evento a cada enlace dentro del menú
+const menuItems = document.querySelectorAll(".nav-links a");
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        // Ocultar el menú al hacer clic en cualquier enlace
+        navLinks.classList.remove("nav-links_visible");
+        // Actualizar el aria-label del botón
+        navToggle.setAttribute("aria-label", "Abrir menú");
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
